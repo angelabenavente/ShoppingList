@@ -17,8 +17,8 @@ $(document).ready(function() {
     var parent = $(this).parent().parent().remove();
   })
 
-  $('.checkbox').on('click', function() {
-    $(this).parent().toggleClass('done');
-    console.log('hi');
-  })
+  // $('.checkbox').on('click', function() {
+  //   $(this).parent().toggleClass('done');
+  //   console.log('hi');
+  // })
 })
