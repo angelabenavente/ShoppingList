@@ -5,36 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <!-- <link href="./styles/main.css" rel="stylesheet"
-        type="text/css"> -->
+    <link href="./styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="./styles/main.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/bf82408d8a.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <header>
+      <h1 class="title">My Shopping List</h1>
+    </header>
 
-    <div id="addItemContainer">
-      <form>
-        <input type="text" placeholder="Ej: Milk" />
-        <button>Add item</button>
-      </form>
-    </div>
-
-    <ul id="itemsContainer">
-      <li class="item">
-        <div class="remove">X</div>
-        Milk
-      </li>
-      <li class="item">
-        <div class="remove">X</div>
-        Chocolate
-      </li>
-      <li class="item">
-        <div class="remove">X</div>
-        Bread
+    <main>
+      <div class="addItemWrapper" id="addItemContainer">
+        <form class="addItemForm">
+          <input class="addItemInput" type="text" placeholder="Ej: Milk" />
+          <button class="addItemButton">Add</button>
+        </form>
       </div>
-      <li class="item">
-        <div class="remove">X</div>
-        Pears
-      </li>
-    </ul>
+
+      <ul class="itemsList" id="itemsContainer">
+        <li class="itemWrapper">
+          <div class="checkbox"><i class="tick fas fa-check"></i></div>
+          <div class="item">
+          Milk
+          <div class="remove fas fa-times"></i>
+        </li>
+        <li class="itemWrapper">
+          <div class="checkbox"><i class="tick fas fa-check"></i></div>
+          <div class="item">
+          Chocolate
+          <div class="remove fas fa-times"></i>
+        </li>
+        <li class="itemWrapper">
+          <div class="checkbox"><i class="tick fas fa-check"></i></div>
+          <div class="item">
+          Bread
+          <div class="remove fas fa-times"></i>
+        </li>
+        <li class="itemWrapper">
+          <div class="checkbox"><i class="tick fas fa-check"></i></div>
+          <div class="item">
+          Pears
+          <div class="remove fas fa-times"></i>
+        </li>
+      </ul>
+    </main>
 
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="js/main.js"></script>
