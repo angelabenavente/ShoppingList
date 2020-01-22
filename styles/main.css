@@ -97,10 +97,6 @@ main {
   width: 95%;
 }
 
-.remove {
-  text-decoration: none !important;
-}
-
 .remove:hover {
   color: #ff8d00;
   transform: scale(1.3);

@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   $('#addItemContainer').on('click', 'button', function() {
     var value = $('#addItemContainer input').val();
-    var newItem = '<li class="itemWrapper"><input type="checkbox" class="checkbox"></input><div class="item"><p class="newItem">'+value+'</p><div class="remove fas fa-times"></div></li>';
+    var newItem = '<li class="itemWrapper"><input type="checkbox" class="checkbox"></input><div class="item">' + value + '<div class="remove fas fa-times"></i></li>'
 
     // $('#itemsContainer').append(newItem);
     // $('#itemsContainer').prepend(newItem); /* Add item in last place' */
@@ -17,8 +17,8 @@ $(document).ready(function() {
     var parent = $(this).parent().parent().remove();
   })
 
-  // $('.checkbox').on('click', function() {
-  //     $(this).parent().children().last().children().first().toggleClass('done');
-  //   console.log('hi');
-  // })
+  $('.checkbox').on('click', function() {
+    $(this).parent().toggleClass('done');
+    console.log('hi');
+  })
 })
