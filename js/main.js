@@ -9,7 +9,9 @@ $(document).ready(function() {
     var newItem = '<li class="item"> \
       <div class="remove">X</div>' + value + '</li>'
 
-    $('#itemsContainer').append(newItem);
+    // $('#itemsContainer').append(newItem);
+    // $('#itemsContainer').prepend(newItem); /* Add item in last place' */
+    $(newItem).appendTo('#itemsContainer'); /* Other efficient method. */
   })
 
 })
