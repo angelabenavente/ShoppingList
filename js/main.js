@@ -14,4 +14,8 @@ $(document).ready(function() {
     $(newItem).appendTo('#itemsContainer'); /* Other efficient method. */
   })
 
+  $('#itemsContainer').on('click', '.remove', function() {
+    var parent = $(this).parent().remove();
+  })
+
 })
