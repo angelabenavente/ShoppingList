@@ -67,9 +67,9 @@ main {
 .checkbox {
   height: 35px;
   width: 35px;
-  -moz-appearance:none;
+  /* -moz-appearance:none;
   -webkit-appearance:none;
-  -o-appearance:none;
+  -o-appearance:none; */
   border: 2px solid #b56a09;
   background: #dbdbf1;
   background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(223, 230, 221) 100%);
@@ -82,8 +82,8 @@ main {
   padding-left: 8px;
 }
 
-.tick {
-  display: none;
+.done {
+  text-decoration: line-through;
 }
 
 .item {
