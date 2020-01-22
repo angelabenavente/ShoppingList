@@ -4,16 +4,6 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-
-  $('#addListContainer').on('change', '.addListButton', function() {
-    var val = $('#addListContainer input').val();
-    var newList = '<div class="singleListWrapper"><div class="addItemWrapper" id="addItemContainer"><form class="addItemForm"><input class="addItemInput" type="text" placeholder="Ej: Milk" /><button class="addItemButton">Add</button></form></div><ul class="itemsList" id="itemsContainer"></div>';
-
-    // $('#itemsContainer').append(newItem);
-    // $('#itemsContainer').prepend(newItem); /* Add item in last place' */
-    $(newList).appendTo('main'); /* Other efficient method. */
-  })
-
   $('#addItemContainer').on('click', 'button', function() {
     var value = $('#addItemContainer input').val();
     var newItem = '<li class="itemWrapper"><input type="checkbox" class="checkbox"></input><div class="item"><p class="newItem">'+value+'</p><div class="remove fas fa-times"></div></li>';
